@@ -1,0 +1,19 @@
+total = 0
+print("Digite 5 números!")
+var1 = int(input("Digite o primeiro número:"))
+if var1 % 2 == 0:
+  total = total + 1
+var2 = int(input("Digite o segundo número:"))
+if var2 % 2 == 0:
+  total = total + 1
+  var3 = int(input("Digite o terceiro número:"))
+if var3 % 2 == 0:
+  total = total + 1
+var4 = int(input("Digite o quarto número:"))
+if var4 % 2 == 0:
+  total = total + 1
+var5 = int(input("Digite o quinto número:"))
+if var5 % 2 == 0:
+  total = total + 1
+
+print("total de números pares digitados:", total)
