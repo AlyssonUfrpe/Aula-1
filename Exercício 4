@@ -1,0 +1,18 @@
+def idademedia ():
+   lista = []
+   repetição = 1
+   booleano = True
+   while  booleano :
+     idade = int(input("Digite sua idade:",format(str(repetição))))
+     repetição += 1
+     if idade >= 0:
+       print("idade adicionada na lista!")
+       lista.append(idade) 
+        
+     else:
+      booleano = False
+      soma = 0
+      for  i  in  lista:
+        soma  +=  i
+        media  =  soma  /  len ( lista )
+      print ( "a média das idades é: {}" . format ( str ( media )))
