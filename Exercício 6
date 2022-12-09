@@ -1,0 +1,29 @@
+def  valorPagamento ():
+        continuar  =  True
+        while continuar: 
+            valortotal  =  0
+            totalprestacoes  =  0
+            multa  = 3/100
+            juros_dia  =  1/1000
+            valor_prestacao  =  float ( input ( "VALOR DA PRESTAÇÃO: " ))
+            dias_atraso  =  int ( input ( "NÚMERO DE DIAS DE ATRASO: " ))
+
+            if valor_prestacao  ==  0 :
+                print ( "RELATÓRIO: " )
+                print ( "QUANTIA TOTAL DAS PRESTAÇÕES PAGAS NO DIA {}" . format ( str ( total_valor )))
+                print ( "TOTAL DE PRESTAÇÕES PAGAS NO DIA {}" . format ( str ( total_prestacoes )))
+            else :
+                if  dias_atraso  ==  0 :
+                    continuar  =  False
+                    valor_total  =  valor_prestacao
+                    imprimir ( valor_total )
+                else :
+                    multa  =  valor_prestacao  *  multa
+                    juros  = ( 1  +  juros_dia ) **  dias_atraso
+                    valor_c_juros  =  juros  *  valor_prestacao
+                    valor_total  =  multa  +  valor_c_juros
+                   
+                    valor_total  =  round ( valor_total , 3 )
+                    print ( "O valor total {}" . format ( str ( valor_total )))
+                    total_valor_dia  +=  valor_total
+                    total_prestacoes_dia  +=  1
