@@ -1,0 +1,7 @@
+senha_digitada = int(input("Digite a senha:"))
+
+while senha_digitada != 2002:
+  print("SENHA INCORRETA!")
+  senha_digitada = int(input("Digite a senha novamente:"))
+
+print ("ACESSO LIBERADO!")
