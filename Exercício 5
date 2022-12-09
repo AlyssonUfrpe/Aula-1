@@ -1,0 +1,9 @@
+def  calculaSalario ():
+        salariobruto  =  float ( input ( "Digite o salário bruto: " ))
+        INSS  =  salariobruto  *  0,11
+        IR  =  salariobruto  *  0,15
+        salarioliquido  =  salariobruto  -  INSS  -  IR
+  print( "O salário bruto é {}" . format ( str(salariobruto )))
+  print ("Desconto do inss ={}". format (str(INSS)))
+  print ("Desconto do imposto de renda={}". format (str(INSS)))
+  print ( "O salário liquido é {}" . format ( str ( salario_liquido )))
